@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alishba Tabassum — Computer Science student and aspiring web developer. Portfolio, skills, projects and contact information.">
+  <meta name="theme-color" content="#0E1015">
+  <title>Alishba Tabassum — Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Alishba Tabassum home">AT<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <span class="theme-icon">☼</span>
+        </button>
+        <a href="cv.pdf" download class="nav-cv">Download CV</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="hero-spotlight" aria-hidden="true"></div>
+      <div class="hero-grid section-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">// hello world</p>
+          <h1 class="hero-title reveal">Hi, I'm <span class="accent name-inline"><span class="hero-name">Alishba Tabassum</span></span></h1>
+          <p class="hero-role reveal">Computer Science Student &amp; Aspiring Web Developer</p>
+          <p class="hero-desc reveal">I build clean, responsive, user-friendly digital experiences with HTML, CSS, JavaScript and C++ — learning by shipping real projects, one project at a time.</p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary">View My Projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-ghost">Contact Me <span>→</span></a>
+          </div>
+          <div class="hero-socials reveal" aria-label="Social links">
+            <a href="https://www.linkedin.com/help/linkedin/" target="_blank" rel="noopener" class="social-pill">LinkedIn</a>
+            <a href="https://wa.me/923000841325?text=Hello%21%20I%E2%80%99m%20Alishba%20Tabassum%2C%20a%20Computer%20Science%20student%20and%20aspiring%20Web%20Developer.%20I%E2%80%99d%20love%20to%20connect%20with%20you%20and%20learn%20from%20your%20experience%20in%20the%20tech%20industry.%20Looking%20forward%20to%20connecting%20with%20you%21" target="_blank" rel="noopener" class="social-pill">WhatsApp</a>
+            <a href="mailto:alishbatabassum900@gmail.com?subject=Hello%20Alishba%20%E2%80%94%20I%E2%80%99d%20like%20to%20connect%20with%20you&body=Hello%20Alishba%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%20I%E2%80%99d%20love%20to%20discuss%20an%20opportunity%20or%20collaboration%20with%20you.%0A%0ABest%20regards%2C" class="social-pill">Email</a>
+          </div>
+          <div class="hero-meta reveal"><span class="status-dot"></span> Open to internships &amp; freelance work</div>
+        </div>
+
+        <!-- Developer visual instead of profile photo -->
+        <div class="hero-visual reveal" aria-label="Developer workspace illustration">
+          <div class="code-orbit orbit-a"></div>
+          <div class="code-orbit orbit-b"></div>
+          <div class="editor-window">
+            <div class="editor-topbar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot pink"></span>
+              <span class="editor-filename">developer.js</span>
+              <span class="editor-status">●</span>
+            </div>
+            <div class="editor-body">
+              <pre><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Alishba Tabassum"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Aspiring Web Developer"</span>,
+  <span class="c-key">study</span>: <span class="c-str">"BSCS — 4th Semester"</span>,
+  <span class="c-key">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+           <span class="c-str">"JavaScript"</span>, <span class="c-str">"C++"</span>],
+  <span class="c-key">learning</span>: <span class="c-bool">true</span>,
+  <span class="c-key">mindset</span>: <span class="c-str">"build, learn, improve"</span>
+};
+
+<span class="c-comment">// turning ideas into useful interfaces</span>
+<span class="c-var">developer</span>.<span class="c-fn">buildSomethingGreat</span>()<span class="cursor-blink">|</span></code></pre>
+            </div>
+            <div class="editor-bottom">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>C++</span>
+            </div>
+          </div>
+          <div class="floating-label label-two">UI / UX <b>+</b></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow reveal">// about me</p>
+        <h2 class="section-title reveal">Getting to know me<span class="accent">.</span></h2>
+        <p class="section-sub reveal">A curious learner who enjoys combining thoughtful design with practical development.</p>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm a Computer Science student currently in my 4th semester at FUUAST. Somewhere between assignments and debugging sessions, I fell in love with the idea that a few lines of code can turn into something people actually use.</p>
+            <p>I'm passionate about web development, problem-solving and creating useful digital experiences. Most of what I know, I've learned by building — real projects, real bugs and real fixes.</p>
+            <p>My goal is to grow into a developer who can contribute to meaningful real-world projects while continuously improving my technical and UI/UX skills.</p>
+          </div>
+          <div class="journey-card reveal">
+            <p class="journey-label">My Journey</p>
+            <ul class="journey-list">
+              <li><span class="journey-tag">now</span> Studying BSCS at FUUAST — 4th Semester</li>
+              <li><span class="journey-tag">built</span> Fatima Zahra Hijabs — responsive e-commerce front end</li>
+              <li><span class="journey-tag">built</span> Hotel Management System in C++ with a team</li>
+              <li><span class="journey-tag">next</span> Deepening JavaScript and modern development workflows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow reveal">// skills</p>
+        <h2 class="section-title reveal">What I work with<span class="accent">.</span></h2>
+        <p class="section-sub reveal">Technical foundations I use to turn ideas into responsive, usable experiences.</p>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">&lt;/&gt;</span><span class="skill-level">Intermediate</span></div><h3>HTML5</h3><p>Semantic, accessible markup and strong page structure.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">#</span><span class="skill-level">Intermediate</span></div><h3>CSS3</h3><p>Responsive layouts, animation, spacing and visual hierarchy.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">{ }</span><span class="skill-level developing">Developing</span></div><h3>JavaScript</h3><p>DOM manipulation, interactions, validation and practical logic.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">++</span><span class="skill-level developing">Developing</span></div><h3>C++</h3><p>Programming fundamentals, OOP and structured problem solving.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">↔</span><span class="skill-level">Intermediate</span></div><h3>Responsive Design</h3><p>Interfaces that adapt cleanly across phone, tablet and desktop.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">◎</span><span class="skill-level developing">Growing</span></div><h3>UI/UX Fundamentals</h3><p>Hierarchy, user flows, spacing and interaction thinking.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">◇</span><span class="skill-level developing">Developing</span></div><h3>OOP</h3><p>Classes, objects and reusable programming concepts.</p></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-icon">✓</span><span class="skill-level">Intermediate</span></div><h3>Problem Solving</h3><p>Breaking larger problems into clear, practical steps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-inner">
+        <p class="eyebrow reveal">// what I can build</p>
+        <h2 class="section-title reveal">Services &amp; focus areas<span class="accent">.</span></h2>
+        <p class="section-sub reveal">A simple set of areas where my current skills can add value.</p>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-icon">▣</span><h3>Landing Pages</h3><p>Clean single-page websites designed to introduce a product, service or idea clearly.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◒</span><h3>Portfolio Websites</h3><p>Personal sites that showcase projects, skills and experience in a professional way.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◈</span><h3>Basic UI Design</h3><p>Simple, user-friendly interfaces with strong hierarchy, spacing and responsive behavior.</p></article>
+          <article class="service-card reveal"><span class="service-icon">↻</span><h3>Styling &amp; Redesign</h3><p>Refreshing an existing front end with cleaner layouts, interactions and responsive styling.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <div class="projects-heading reveal">
+          <div><p class="eyebrow">// selected work</p><h2 class="section-title">Ideas, interfaces &amp; practice<span class="accent">.</span></h2><p class="section-sub">A curated look at the interfaces, applications and programming work I have built while growing as a developer.</p></div>
+          <div class="project-count"><strong>05</strong><span>projects<br>showcased</span></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 01 -->
+          <article class="project-card featured reveal">
+            <div class="project-preview hijab-preview">
+              <span class="project-number">01</span>
+              <span class="project-badge">FEATURED</span>
+              <div class="store-shot">
+                <div class="shot-nav"><b>FZ</b><span>Home</span><span>Shop</span><span>About</span><span>Contact</span><i>♡</i></div>
+                <div class="shot-hero"><small>NEW COLLECTION</small><strong>Fatima Zahra<br><em>Hijabs</em></strong><button>SHOP NOW</button></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-type">WEB DEVELOPMENT</p><h3>Fatima Zahra Hijabs</h3>
+              <p class="project-desc">A responsive e-commerce front end for a hijab brand, built from scratch with a focus on product presentation, responsive layouts and friendly interactions.</p>
+              <ul class="project-features"><li>Product cards &amp; color selection</li><li>Image slider &amp; smooth animations</li><li>Contact / order flow</li><li>Responsive user-friendly UI</li></ul>
+              <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>UI/UX</span></div>
+              <div class="project-links"><a href="#" class="btn btn-primary btn-sm project-placeholder" data-link-name="Hijab Website Live Demo">Live Demo ↗</a><a href="https://github.com/alishbatabassum" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="project-card reveal">
+            <div class="project-preview todo-preview"><span class="project-number">02</span><div class="todo-shot"><div class="todo-head"><strong>My Tasks</strong><span>+ Add</span></div><div class="todo-progress"><i></i></div><label><b>✓</b> Complete portfolio</label><label><b>✓</b> Practice JavaScript</label><label><b>○</b> Deploy project</label><label><b>○</b> Add new task</label></div></div>
+            <div class="project-body"><p class="project-type">JAVASCRIPT APP</p><h3>To-Do List Application</h3><p class="project-desc">A simple task-management application designed to keep everyday tasks organized with a clean interface.</p><ul class="project-features"><li>Add and manage tasks</li><li>Interactive task states</li><li>Responsive layout</li></ul><div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="#" class="btn btn-primary btn-sm project-placeholder" data-link-name="To-Do List Live Demo">Live Demo ↗</a><a href="#" class="btn btn-ghost btn-sm project-placeholder" data-link-name="To-Do List GitHub">GitHub ↗</a></div></div>
+          </article>
+
+          <!-- 03 -->
+          <article class="project-card reveal">
+            <div class="project-preview midterm-preview"><span class="project-number">03</span><div class="browser-shot"><div class="browser-top"><i></i><i></i><i></i><span>frontend-practice</span></div><div class="browser-content"><small>FRONTEND PRACTICE</small><strong>HTML · CSS<br><em>JavaScript</em></strong><div class="mini-lines"><i></i><i></i><i></i></div><button>VIEW PRACTICE</button></div></div></div>
+            <div class="project-body"><p class="project-type">HTML · CSS · JAVASCRIPT · PRACTICE</p><h3>Frontend Practice</h3><p class="project-desc">A collection of hands-on frontend practice work created while learning HTML, CSS and JavaScript, with a focus on layouts, styling, interactions and responsive design.</p><ul class="project-features"><li>Semantic HTML structure</li><li>Responsive CSS layouts</li><li>JavaScript interactions</li></ul><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div><div class="project-links"><a href="#" class="btn btn-primary btn-sm project-placeholder" data-link-name="Frontend Practice Preview">View Practice ↗</a></div></div>
+          </article>
+
+          <!-- 05 -->
+          <article class="project-card reveal">
+            <div class="project-preview portfolio-preview"><span class="project-number">05</span><span class="project-badge">FINAL PROJECT</span><div class="portfolio-shot"><div class="portfolio-top"><b>AT.</b><span>HOME</span><span>PROJECTS</span><span>CONTACT</span></div><div class="portfolio-main"><small>PERSONAL PORTFOLIO</small><strong>Alishba<br>Tabassum</strong><div class="portfolio-line"></div><i>Web Developer Portfolio</i></div></div></div>
+            <div class="project-body"><p class="project-type">FINAL PROJECT · WEB DEVELOPMENT</p><h3>Personal Portfolio Website</h3><p class="project-desc">A responsive personal portfolio designed to present my skills, projects, learning journey and contact information through a polished developer-focused interface.</p><ul class="project-features"><li>Responsive mobile-first layout</li><li>Interactive UI and smooth animations</li><li>Dark / light theme support</li></ul><div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>UI/UX</span></div><div class="project-links"><a href="#" class="btn btn-primary btn-sm project-placeholder" data-link-name="Personal Portfolio Live Demo">Live Demo ↗</a><a href="https://github.com/alishbatabassum" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub ↗</a></div></div>
+          </article>
+
+          <!-- 04 -->
+          <article class="project-card reveal">
+            <div class="project-preview hotel-preview"><span class="project-number">04</span><div class="hotel-shot"><div class="hotel-top"><span>HOTEL SYSTEM</span><b>● online</b></div><div class="hotel-body"><strong>Hotel Management</strong><div class="hotel-row"><span>Room 101</span><b>Available</b></div><div class="hotel-row"><span>Room 204</span><b>Booked</b></div><div class="hotel-row"><span>Billing</span><b>Ready</b></div></div></div></div>
+            <div class="project-body"><p class="project-type">C++ · OOP · TEAM PROJECT</p><h3>Hotel Management System</h3><p class="project-desc">A C++ hotel management system built collaboratively with a team, applying programming fundamentals and OOP to everyday hotel operations.</p><ul class="project-features"><li>Object-oriented design</li><li>Team collaboration</li><li>Hotel operations &amp; records</li></ul><div class="project-tech"><span>C++</span><span>OOP</span><span>Team Project</span></div><div class="project-links"><a href="https://github.com/alishbatabassum" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub ↗</a></div></div>
+          </article>
+        </div>
+        <div class="project-note reveal"><span>●</span> Live Demo buttons are ready for your deployed project URLs when you publish them.</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION / EXPERIENCE -->
+    <section class="section" id="education">
+      <div class="section-inner">
+        <p class="eyebrow reveal">// education &amp; experience</p>
+        <h2 class="section-title reveal">My learning journey<span class="accent">.</span></h2>
+        <p class="section-sub reveal">Building practical experience alongside my Computer Science studies.</p>
+        <div class="education-grid">
+          <article class="education-card reveal"><span class="edu-icon">🎓</span><div><span class="edu-date">CURRENT · 4TH SEMESTER</span><h3>Bachelor of Science in Computer Science</h3><p>Federal Urdu University of Arts, Science &amp; Technology (FUUAST)</p><div class="edu-tags"><span>Computer Science</span><span>Programming</span><span>Web Development</span></div></div></article>
+          <article class="education-card reveal"><span class="edu-icon">⌘</span><div><span class="edu-date">PROJECT-BASED LEARNING</span><h3>Practical Web Development</h3><p>Hands-on learning through responsive UI, JavaScript interactions, portfolio development and programming projects.</p><div class="edu-tags"><span>HTML/CSS</span><span>JavaScript</span><span>C++ / OOP</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow reveal">// contact</p>
+        <h2 class="section-title reveal">Let's build something<br><span class="accent">great together.</span></h2>
+        <p class="section-sub reveal">Have a project in mind, want to collaborate, or simply want to say hello? Choose any option below.</p>
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <a href="https://wa.me/923000841325?text=Hello%21%20I%E2%80%99m%20Alishba%20Tabassum%2C%20a%20Computer%20Science%20student%20and%20aspiring%20Web%20Developer.%20I%E2%80%99d%20love%20to%20connect%20with%20you%20and%20learn%20from%20your%20experience%20in%20the%20tech%20industry.%20Looking%20forward%20to%20connecting%20with%20you%21" target="_blank" rel="noopener" class="contact-link"><span class="contact-icon whatsapp" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span><span><strong>WhatsApp</strong><small>0300-0841325</small></span><b>↗</b></a>
+            <a href="mailto:alishbatabassum900@gmail.com?subject=Hello%20Alishba%20%E2%80%94%20I%E2%80%99d%20like%20to%20connect%20with%20you&body=Hello%20Alishba%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%20I%E2%80%99d%20love%20to%20discuss%20an%20opportunity%20or%20collaboration%20with%20you.%0A%0ABest%20regards%2C" class="contact-link"><span class="contact-icon email" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span><span><strong>Email</strong><small>alishbatabassum900@gmail.com</small></span><b>↗</b></a>
+            <a href="https://www.linkedin.com/help/linkedin/" target="_blank" rel="noopener" class="contact-link"><span class="contact-icon linkedin" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span><span><strong>LinkedIn</strong><small>LinkedIn</small></span><b>↗</b></a>
+            <a href="https://github.com/alishbatabassum" target="_blank" rel="noopener" class="contact-link"><span class="contact-icon github" aria-hidden="true"><i class="fa-brands fa-github"></i></span><span><strong>GitHub</strong><small>@alishbatabassum</small></span><b>↗</b></a>
+            <a href="https://instagram.com/alishbanaeem525" target="_blank" rel="noopener" class="contact-link"><span class="contact-icon instagram" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span><span><strong>Instagram</strong><small>@alishbanaeem525</small></span><b>↗</b></a>
+            <a href="cv.pdf" download class="contact-link"><span class="contact-icon cv" aria-hidden="true"><i class="fa-solid fa-file-arrow-down"></i></span><span><strong>Download CV</strong><small>PDF résumé</small></span><b>↓</b></a>
+          </div>
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-heading"><span>START A CONVERSATION</span><b>● online</b></div>
+            <label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+            <label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <label for="message">Your message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <button type="submit" class="btn btn-primary btn-full">Prepare Email <span>↗</span></button>
+            <p class="form-note" id="formNote">Your email app will open with the message prepared.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <div><p class="footer-name">Alishba Tabassum<span class="accent">.</span></p><p class="footer-role">Computer Science Student &amp; Aspiring Web Developer</p></div>
+      <div class="footer-social"><a href="https://www.linkedin.com/help/linkedin/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://wa.me/923000841325?text=Hello%21%20I%E2%80%99m%20Alishba%20Tabassum%2C%20a%20Computer%20Science%20student%20and%20aspiring%20Web%20Developer.%20I%E2%80%99d%20love%20to%20connect%20with%20you%20and%20learn%20from%20your%20experience%20in%20the%20tech%20industry.%20Looking%20forward%20to%20connecting%20with%20you%21" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://github.com/alishbatabassum" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://instagram.com/alishbanaeem525" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="mailto:alishbatabassum900@gmail.com?subject=Hello%20Alishba%20%E2%80%94%20I%E2%80%99d%20like%20to%20connect%20with%20you&body=Hello%20Alishba%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%20I%E2%80%99d%20love%20to%20discuss%20an%20opportunity%20or%20collaboration%20with%20you.%0A%0ABest%20regards%2C" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div>
+      <p class="footer-copy">© <span id="year"></span> Alishba Tabassum · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
